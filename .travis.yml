@@ -1,0 +1,17 @@
+language: cpp
+
+sudo: required
+os: linux
+dist: trusty
+compiler: gcc
+
+notifications:
+  email: false
+
+before_install:
+  - sudo apt-get update -qq
+  - ./install_prereqs.sh
+
+script:
+  - true
+
